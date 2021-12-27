@@ -1,0 +1,8 @@
+[Unit]
+Description=DBIIoT
+
+[Service]
+ExecStart=/opt/db_iiot/start.sh
+
+[Install]
+WantedBy=multi-user.target

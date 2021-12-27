@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>IIoT</title>
+        <meta charset="utf-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='scripts/script.js') }}"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+    </head>
+    <body>
+        <h1>Статус робота</h1>
+        <div>
+            <p class="switch" style="top: -13px;">Авто</p>
+            <label class="switch">
+                <input type="checkbox" value="Auto" id="mode">
+                <span class="slider round"></span>
+            </label>
+            <p class="switch" style="width: 100px;
+            top: -13px;
+            margin-left: 10px;">Ручной режим</p>
+        </div>
+        <!-- <input type="submit" id="mode" value="Auto"> -->
+        <div style="height: 50%;">
+            <div class="move" id='forward' disabled>
+                <div></div>
+            </div>
+            <div class="move" id='left' disabled>
+                <div></div>
+            </div>
+            <div class="move" id='right' disabled>
+                <div></div>
+            </div>
+            <div class="move" id='back' disabled>
+                <div></div>
+            </div>
+        </div>
+        <div class="move" id="stop" disabled>STOP</div>
+    </body>
+</html>

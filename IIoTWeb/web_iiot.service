@@ -1,0 +1,8 @@
+[Unit]
+Description=WebService
+
+[Service]
+ExecStart=/opt/web_service/start.sh
+
+[Install]
+WantedBy=multi-user.target
